@@ -1,208 +1,292 @@
 <!DOCTYPE html>
-<html>
-<title>The Code Foundation</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="css/w3.css">
-<link rel="stylesheet" href="css/w3-theme-blue.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="shortcut icon" href="img/fb-logo.jpg" />
-<body id="home">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Code Foundation</title>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Vadodara:400,700|Mukta:500,700" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed has-animations">
+    <div class="body-wrap boxed-container">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+                            <a href="#">
+                                <img src="img/fb-logo.jpg" title="The Code Foundation" alt="The Code Foundation logo" width="50px" />
+                            </a>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+        </header>
 
-<!-- Sidebar on click -->
-<nav class="w3-sidebar w3-bar-block w3-blue w3-card w3-animate-left w3-xlarge" style="display:none;z-index:2" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-white w3-display-topright w3-text-blue">Close
-    <i class="fa fa-remove"></i>
-  </a>
-  <br><br>
-  <a href="#work" class="w3-bar-item w3-button w3-hover-white">About</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hover-white">Contact</a>
-  <a href="#join" class="w3-bar-item w3-button w3-theme-d5 w3-hover-white w3-right">Join Us</a>
-</nav>
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+                        <div class="hero-copy">
+                            <h1 class="hero-title h2-mobile mt-0 is-revealing">Open Code,<br>For Humans</h1>
+                            <p class="hero-paragraph is-revealing">We are group of technology enthusiasts passionate about building AI solutions to solve problems around us, while establishing our love for open source.</p>
+                            <p class="hero-cta is-revealing"><a class="button button-primary button-shadow" href="#">Explore our projects</a></p>
+                        </div>
+                        <div class="hero-illustration is-revealing">
+                            <svg width="528" height="413" viewBox="0 0 528 413" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="hero-illustration-a">
+                                        <stop stop-color="#A7FDE8" stop-opacity="0" offset="0%"/>
+                                        <stop stop-color="#6EFACC" offset="100%"/>
+                                    </linearGradient>
+                                    <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="hero-illustration-b">
+                                        <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                                        <stop stop-color="#FF4F7A" offset="100%"/>
+                                    </linearGradient>
+                                    <radialGradient fx="50%" fy="50%" r="100%" id="hero-illustration-c">
+                                        <stop stop-color="#6EFACC" offset="0%"/>
+                                        <stop stop-color="#6EFACC" stop-opacity="0" offset="100%"/>
+                                    </radialGradient>
+                                    <linearGradient x1="0%" y1="100%" y2="0%" id="hero-illustration-d">
+                                        <stop stop-color="#007CFE" stop-opacity="0" offset="0%"/>
+                                        <stop stop-color="#007DFF" offset="100%"/>
+                                    </linearGradient>
+                                    <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="hero-illustration-e">
+                                        <stop stop-color="#FF4F7A" stop-opacity="0" offset="0%"/>
+                                        <stop stop-color="#FF4F7A" offset="100%"/>
+                                    </linearGradient>
+                                    <filter x="-500%" y="-500%" width="1000%" height="1000%" filterUnits="objectBoundingBox" id="dropshadow-1">
+                                        <feOffset dy="16" in="SourceAlpha" result="shadowOffsetOuter"/>
+                                        <feGaussianBlur stdDeviation="24" in="shadowOffsetOuter" result="shadowBlurOuter"/>
+                                        <feColorMatrix values="0 0 0 0 0.12 0 0 0 0 0.17 0 0 0 0 0.21 0 0 0 0.2 0" in="shadowBlurOuter"/>
+                                    </filter>
+                                </defs>
+                                <g transform="translate(0 -1)" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(128 290)" fill="url(#hero-illustration-a)">
+                                        <path d="M62.225 0l1.415 1.414L1.414 63.64 0 62.225zM66.468 4.243l1.414 1.414L5.657 67.882l-1.414-1.414zM70.71 8.485L72.126 9.9 9.899 72.125 8.485 70.71zM74.953 12.728l1.415 1.414-62.226 62.226-1.414-1.415zM79.196 16.97l1.414 1.415L18.385 80.61l-1.414-1.414zM83.439 21.213l1.414 1.414-62.226 62.226-1.414-1.414zM87.681 25.456l1.414 1.414L26.87 89.095l-1.414-1.414zM91.924 29.698l1.414 1.415-62.225 62.225-1.415-1.414z"/>
+                                        <path d="M91.924 29.698l1.414 1.415-62.225 62.225-1.415-1.414zM96.167 33.941l1.414 1.414-62.226 62.226-1.414-1.414zM100.41 38.184l1.413 1.414-62.225 62.225-1.414-1.414zM104.652 42.426l1.414 1.415-62.225 62.225-1.415-1.414zM108.894 46.669l1.415 1.414-62.226 62.226-1.414-1.415zM113.137 50.912l1.414 1.414-62.225 62.225-1.414-1.414zM117.38 55.154l1.414 1.415-62.225 62.225-1.415-1.414zM121.622 59.397l1.415 1.414-62.226 62.226-1.414-1.415z"/>
+                                        <g>
+                                            <path d="M100.811 0l-1.414 1.414 62.225 62.226 1.415-1.415zM96.569 4.243l-1.415 1.414 62.226 62.225 1.414-1.414zM92.326 8.485L90.912 9.9l62.225 62.226 1.414-1.414zM88.083 12.728l-1.414 1.414 62.225 62.226 1.415-1.415zM83.84 16.97l-1.414 1.415 62.226 62.225 1.414-1.414zM79.598 21.213l-1.414 1.414 62.225 62.226 1.414-1.414zM75.355 25.456l-1.414 1.414 62.226 62.225 1.414-1.414zM71.113 29.698l-1.415 1.415 62.226 62.225 1.414-1.414z"/>
+                                            <path d="M71.113 29.698l-1.415 1.415 62.226 62.225 1.414-1.414zM66.87 33.941l-1.414 1.414 62.225 62.226 1.414-1.414zM62.627 38.184l-1.414 1.414 62.226 62.225 1.414-1.414zM58.385 42.426l-1.414 1.415 62.225 62.225 1.414-1.414zM54.142 46.669l-1.414 1.414 62.225 62.226 1.415-1.415zM49.9 50.912l-1.415 1.414 62.226 62.225 1.414-1.414zM45.657 55.154l-1.414 1.415 62.225 62.225 1.414-1.414zM41.414 59.397L40 60.811l62.225 62.226 1.415-1.415z"/>
+                                        </g>
+                                    </g>
+                                    <g transform="matrix(1 0 0 -1 326 124)" fill="url(#hero-illustration-a)">
+                                        <path d="M62.225 0l1.415 1.414L1.414 63.64 0 62.225zM66.468 4.243l1.414 1.414L5.657 67.882l-1.414-1.414zM70.71 8.485L72.126 9.9 9.899 72.125 8.485 70.71zM74.953 12.728l1.415 1.414-62.226 62.226-1.414-1.415zM79.196 16.97l1.414 1.415L18.385 80.61l-1.414-1.414zM83.439 21.213l1.414 1.414-62.226 62.226-1.414-1.414zM87.681 25.456l1.414 1.414L26.87 89.095l-1.414-1.414zM91.924 29.698l1.414 1.415-62.225 62.225-1.415-1.414z"/>
+                                        <path d="M91.924 29.698l1.414 1.415-62.225 62.225-1.415-1.414zM96.167 33.941l1.414 1.414-62.226 62.226-1.414-1.414zM100.41 38.184l1.413 1.414-62.225 62.225-1.414-1.414zM104.652 42.426l1.414 1.415-62.225 62.225-1.415-1.414zM108.894 46.669l1.415 1.414-62.226 62.226-1.414-1.415zM113.137 50.912l1.414 1.414-62.225 62.225-1.414-1.414zM117.38 55.154l1.414 1.415-62.225 62.225-1.415-1.414zM121.622 59.397l1.415 1.414-62.226 62.226-1.414-1.415z"/>
+                                        <g>
+                                            <path d="M100.811 0l-1.414 1.414 62.225 62.226 1.415-1.415zM96.569 4.243l-1.415 1.414 62.226 62.225 1.414-1.414zM92.326 8.485L90.912 9.9l62.225 62.226 1.414-1.414zM88.083 12.728l-1.414 1.414 62.225 62.226 1.415-1.415zM83.84 16.97l-1.414 1.415 62.226 62.225 1.414-1.414zM79.598 21.213l-1.414 1.414 62.225 62.226 1.414-1.414zM75.355 25.456l-1.414 1.414 62.226 62.225 1.414-1.414zM71.113 29.698l-1.415 1.415 62.226 62.225 1.414-1.414z"/>
+                                            <path d="M71.113 29.698l-1.415 1.415 62.226 62.225 1.414-1.414zM66.87 33.941l-1.414 1.414 62.225 62.226 1.414-1.414zM62.627 38.184l-1.414 1.414 62.226 62.225 1.414-1.414zM58.385 42.426l-1.414 1.415 62.225 62.225 1.414-1.414zM54.142 46.669l-1.414 1.414 62.225 62.226 1.415-1.415zM49.9 50.912l-1.415 1.414 62.226 62.225 1.414-1.414zM45.657 55.154l-1.414 1.415 62.225 62.225 1.414-1.414zM41.414 59.397L40 60.811l62.225 62.226 1.415-1.415z"/>
+                                        </g>
+                                    </g>
+                                    <path d="M0 0h528v414H0z"/>
+                                    <path fill="#FFF" d="M0 63h528v297H0z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+                                    <path fill="#FFF" d="M0 63h528v297H0z"/>
+                                    <path fill="url(#hero-illustration-b)" d="M408 230h80v48h-80z"/>
+                                    <path d="M0 0h4v4H0V0zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zm0 12h4v4H0v-4zM12 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM24 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM36 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM48 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zM60 0h4v4h-4V0zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4zm0 12h4v4h-4v-4z" transform="rotate(45 -118.861 431.981)" fill="url(#hero-illustration-c)"/>
+                                    <path fill="#FFF" d="M288 254h160v160H288z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+                                    <path fill="#FFF" d="M288 254h160v160H288z"/>
+                                    <path d="M248 79h88v24c0 35.346-28.654 64-64 64h-24V79z" fill="url(#hero-illustration-d)"/>
+                                    <path d="M348 132c0 26.51-21.49 48-48 48 0-26.51 21.49-48 48-48z" fill="url(#hero-illustration-e)" transform="matrix(1 0 0 -1 0 312)"/>
+                                    <path fill="#FFF" d="M200 31h88v88h-88z" style="mix-blend-mode:multiply;filter:url(#dropshadow-1)"/>
+                                    <path fill="#FFF" d="M200 31h88v88h-88z"/>
+                                    <path fill="#F6F8FA" d="M24 248l88 88H24z"/>
+                                    <rect fill="url(#hero-illustration-d)" x="335" y="242" width="32" height="32" rx="16"/>
+                                </g>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<!-- Navbar -->
-<div class="w3-top">
- <div class="w3-bar w3-theme-d2 w3-left-align w3-padding w3-padding-16">
-  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-  <a href="#" class="w3-bar-item w3-button w3-white"><img src="img/fb-logo.jpg" height="20px;" alt="TCF logo" /> &nbsp;&nbsp;TCF</a>
-  <a href="#work" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-  <a href="#join" class="w3-bar-item w3-button w3-hide-small w3-theme-d5 w3-hover-white w3-right">Join Us</a>
-  </div>
- </div>
-</div>
+            <section class="features section text-center">
+                <div class="section-square"></div>
+                <div class="container">
+                    <div class="features-inner section-inner">
+                        <div class="features-wrap">
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="img/PICTURES/ai.png" title="The Code Foundation" alt="The Code Foundation logo" width="48px" />
+                                    </div>
+                                    <h4 class="feature-title h3-mobile">Feature</h4>
+                                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="img/PICTURES/web.png" title="The Code Foundation" alt="The Code Foundation logo" width="48px" />
+                                    </div>
+                                    <h4 class="feature-title h3-mobile">Feature</h4>
+                                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="img/PICTURES/searcher.png" title="The Code Foundation" alt="The Code Foundation logo" width="48px" />
+                                    </div>
+                                    <h4 class="feature-title h3-mobile">Feature</h4>
+                                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                                </div>
+                            </div>
+                            <div class="feature is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+                                        <img src="img/PICTURES/stats.png" title="The Code Foundation" alt="The Code Foundation logo" width="48px" />
+                                    </div>
+                                    <h4 class="feature-title h3-mobile">Feature</h4>
+                                    <p class="text-sm">A pseudo-Latin text used in web design, layout, and printing in place of English to emphasise design elements.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-<!-- Image Header -->
-<div class="w3-display-container w3-animate-opacity">
-  <br />
-  <br />
-  <br />
-  <br />
-  <img src="img/banner.jpg" alt="boat" style="width: 100%; height: auto;">
-</div>
+            <section class="pricing section">
+                <div class="section-square"></div>
+                <div class="container">
+                    <div class="pricing-inner section-inner has-top-divider">
+                        <h2 class="section-title mt-0 text-center">Projects</h2>
+                        <div class="pricing-tables-wrap">
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Open Research</div>
+                                            <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-amount h2">Vison</span></div>
+                                        </div>
+                                        abcbbbbbb
+                                    </div>
+                                    <div class="pricing-table-cta is-revealing">
+                                        <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Accessibility</div>
+                                            <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-amount h2">aify.js</span></div>
+                                        </div>
+                                        ksdlakmskldm
+                                    </div>
+                                    <div class="pricing-table-cta is-revealing">
+                                        <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                                    </div>
+                                </div>
+                            </div>
+                          <!--   <div class="pricing-table">
+                                <div class="pricing-table-inner">
+                                    <div class="pricing-table-main">
+                                        <div class="pricing-table-header is-revealing">
+                                            <div class="pricing-table-title mt-12 mb-8">Business</div>
+                                            <div class="pricing-table-price mb-32 pb-24"><span class="pricing-table-price-currency h4">$</span><span class="pricing-table-price-amount h2">147</span>/mo</div>
+                                        </div>
+                                        <ul class="pricing-table-features list-reset text-xs mt-24 mb-56">
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Lorem ipsum is common text </span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Lorem ipsum is common text </span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Lorem ipsum is common text </span>
+                                            </li>
+                                            <li class="is-revealing">
+                                                <span class="list-icon">
+                                                    <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#5FFAD0" fill-rule="nonzero" d="M5.6 8.4L1.6 6 0 7.6 5.6 14 16 3.6 14.4 2z"/>
+                                                    </svg>
+                                                </span>
+                                                <span>Lorem ipsum is common text </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="pricing-table-cta is-revealing">
+                                        <a class="button button-primary button-shadow button-block" href="#">Get early access</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
-<!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-<h2>What we do</h2>
-<p>We create meaningful software, free, open source.</p>
-
-<div class="w3-row"><br>
-
-<div class="w3-quarter">
-  <img src="img/about/1.png" alt="Open Source" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Open Source</h3>
-  <p>We believe in Open Knowledge. We believe in People.</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="img/about/2.png" alt="Free" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Free all the way!</h3>
-  <p>No charges, free till life will be.</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="img/about/3.jpg" alt="Needed" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Impactful</h3>
-  <p>We build that which people need. No bullshit.</p>
-</div>
-
-<div class="w3-quarter">
-  <img src="img/about/4.png" alt="Scalable" style="width:45%" class="w3-circle w3-hover-opacity">
-  <h3>Cutting edge</h3>
-  <p>The best minds on team, we believe in experimenting.</p>
-</div>
-
-</div>
-</div>
-
-<!-- Work Row -->
-<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
-
-<div class="w3-quarter">
-<h2>Our Work</h2>
-<p>The Code Foundation is an open source organization focusing on developing cutting edge technological solutions which are in high demand of the community.
-<br>
-<br>
-Some of the best softwares the world has seen, and are widely used have been developed as open source initiatives - Linux, MySQL, WordPress, WikiPedia, Firefox, the list goes on!
-<br>
-<br>
-We are a group of highly enthusiastic people looking to make a wide impact in the world of information technology through collaborative efforts of the community, focused into projects which demand all levels of skills from noobs to legends. The community is free for all, ever welcoming to all who wish to code their way to a better world!</p>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/default.jpg" alt="SunSight" style="width:100%;">
-  <div class="w3-container">
-  <h3>SunSight</h3>
-  <i>Multimedia Search Engine</i>
-  <button class="w3-btn w3-black" style="width: 100%; margin: 16px 0;"><i class="fa fa-github"></i>&nbsp;&nbsp;Github</button>
-  <button class="w3-btn w3-deep-orange" style="width: 100%; margin: 0;"><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</button>
-  <button class="w3-btn w3-blue" style="width: 100%; margin: 16px 0;"><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/default.jpg" alt="Lights" style="width:100%">
-  <div class="w3-container">
-  <h3>Project 2</h3>
-  <i>Coming Soon</i>
-  <button class="w3-btn w3-black" style="width: 100%; margin: 16px 0;" disabled><i class="fa fa-github"></i>&nbsp;&nbsp;Github</button>
-  <button class="w3-btn w3-deep-orange" style="width: 100%; margin: 0;" disabled><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</button>
-  <button class="w3-btn w3-blue" style="width: 100%; margin: 16px 0;" disabled><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button>
-  </div>
-  </div>
-</div>
-
-<div class="w3-quarter">
-<div class="w3-card w3-white">
-  <img src="img/default.jpg" alt="Mountains" style="width:100%">
-  <div class="w3-container">
-  <h3>Project 3</h3>
-  <i>Coming Soon</i>
-  <button class="w3-btn w3-black" style="width: 100%; margin: 16px 0;" disabled><i class="fa fa-github"></i>&nbsp;&nbsp;Github</button>
-  <button class="w3-btn w3-deep-orange" style="width: 100%; margin: 0;" disabled><i class="fa fa-slack"></i>&nbsp;&nbsp;Slack</button>
-  <button class="w3-btn w3-blue" style="width: 100%; margin: 16px 0;" disabled><i class="fa fa-globe"></i>&nbsp;&nbsp;Website</button>
-  </div>
-  </div>
-</div>
-
-</div>
-
-<!-- Contact Container -->
-<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
-  <div class="w3-row">
-    <div class="w3-col m5">
-    <div class="w3-padding-16"><span class="w3-xlarge w3-border-blue w3-bottombar">Contact Us</span></div>
-      <h3>Address</h3>
-      <p>We love connecting! Meet us up, or just drop us a mail!</p>
-      <p><i class="fa fa-map-marker w3-text-blue w3-xlarge"></i>  Kolkata, India</p>
-      <p><i class="fa fa-phone w3-text-blue w3-xlarge"></i>  +91 7003944046</p>
-      <p><i class="fa fa-envelope-o w3-text-blue w3-xlarge"></i>  thecodefoundation@gmail.com</p>
+        <footer class="site-footer text-light">
+            <div class="container">
+                <div class="site-footer-inner has-top-divider">
+                    <div class="brand footer-brand">
+                        <a href="#">
+                            <img src="img/fb-logo.jpg" title="The Code Foundation" alt="The Code Foundation logo" width="50px" />
+                        </a>
+                    </div>
+                    <ul class="footer-links list-reset">
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">About us</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ's</a>
+                        </li>
+                        <li>
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-social-links list-reset">
+                        <li>
+                            <a href="https://facebook.com/thecodefoundation" target="_blank_">
+                                <span class="screen-reader-text">Facebook</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.023 16L6 9H3V6h3V4c0-2.7 1.672-4 4.08-4 1.153 0 2.144.086 2.433.124v2.821h-1.67c-1.31 0-1.563.623-1.563 1.536V6H13l-1 3H9.28v7H6.023z" fill="#FFFFFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/tcf4code" target="_blank_">
+                                <span class="screen-reader-text">Twitter</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M16 3c-.6.3-1.2.4-1.9.5.7-.4 1.2-1 1.4-1.8-.6.4-1.3.6-2.1.8-.6-.6-1.5-1-2.4-1-1.7 0-3.2 1.5-3.2 3.3 0 .3 0 .5.1.7-2.7-.1-5.2-1.4-6.8-3.4-.3.5-.4 1-.4 1.7 0 1.1.6 2.1 1.5 2.7-.5 0-1-.2-1.5-.4C.7 7.7 1.8 9 3.3 9.3c-.3.1-.6.1-.9.1-.2 0-.4 0-.6-.1.4 1.3 1.6 2.3 3.1 2.3-1.1.9-2.5 1.4-4.1 1.4H0c1.5.9 3.2 1.5 5 1.5 6 0 9.3-5 9.3-9.3v-.4C15 4.3 15.6 3.7 16 3z" fill="#FFFFFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="screen-reader-text">Google</span>
+                                <svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.9 7v2.4H12c-.2 1-1.2 3-4 3-2.4 0-4.3-2-4.3-4.4 0-2.4 2-4.4 4.3-4.4 1.4 0 2.3.6 2.8 1.1l1.9-1.8C11.5 1.7 9.9 1 8 1 4.1 1 1 4.1 1 8s3.1 7 7 7c4 0 6.7-2.8 6.7-6.8 0-.5 0-.8-.1-1.2H7.9z" fill="#FFFFFF"/>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="footer-copyright">&copy; 2018 - 2020 The Code Foundation, all rights reserved</div>
+                </div>
+            </div>
+        </footer>
     </div>
-    <div class="w3-col m7">
-      <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
-      <div class="w3-section">
-        <label>Name</label>
-        <input class="w3-input" type="text" name="Name" required>
-      </div>
-      <div class="w3-section">
-        <label>Email</label>
-        <input class="w3-input" type="text" name="Email" required>
-      </div>
-      <div class="w3-section">
-        <label>Message</label>
-        <input class="w3-input" type="text" name="Message" required>
-      </div>
-      <input class="w3-check" type="checkbox" checked name="Like">
-      <label>Call me back!</label>
-      <button type="submit" class="w3-button w3-right w3-theme">Send</button>
-      </form>
-    </div>
-  </div>
-</div>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
-  <h4>Follow Us</h4>
-  <a class="w3-button w3-large w3-black" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
-  <a class="w3-button w3-large w3-black" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
-  <a class="w3-button w3-large w3-black" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
-  <a class="w3-button w3-large w3-black w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
-  <p></p>
-
-  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-padding w3-black w3-hide-small">Go To Top</span>
-    <a class="w3-button w3-theme" href="#home"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
-</footer>
-
-<script>
-// Script for side navigation
-function w3_open() {
-    var x = document.getElementById("mySidebar");
-    x.style.width = "300px";
-    x.style.paddingTop = "10%";
-    x.style.display = "block";
-}
-
-// Close side navigation
-function w3_close() {
-    document.getElementById("mySidebar").style.display = "none";
-}
-
-// Used to toggle the menu on smaller screens when clicking on the menu button
-function openNav() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
-    }
-}
-</script>
-
+    <script src="dist/js/main.min.js"></script>
 </body>
 </html>
