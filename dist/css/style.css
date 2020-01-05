@@ -1186,6 +1186,12 @@ background: linear-gradient(128deg, rgba(18,143,255,1) 0%, rgba(18,190,255,1) 10
 	max-width: 328px;
 	flex-grow: 1
 }
+.feature-small {
+	padding: 12px;
+	width: 267px;
+	max-width: 267px;
+	flex-grow: 1
+}
 .feature-inner {
 	height: 100%;
 	background: #fff;
