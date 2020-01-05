@@ -1014,46 +1014,46 @@ label {
 	right: 0;
 	bottom: 0;
 	left: 0;
-	box-shadow: 0 8px 16px rgba(31, 43, 53, 0.12);
+	box-shadow: 0 8px 16px rgba(77, 189, 255, 0.25);
 	mix-blend-mode: multiply;
 	transition: box-shadow .15s ease
 }
 .button-shadow:hover::before {
-	box-shadow: 0 8px 16px rgba(31, 43, 53, 0.25)
+	box-shadow: 0 8px 16px rgba(77, 181, 255, 0.4)
 }
 .button-sm {
 	padding: 8px 24px;
 	height: 32px
 }
 .button-sm.button-shadow::before {
-	box-shadow: 0 4px 16px rgba(31, 43, 53, 0.12)
+	box-shadow: 0 8px 16px rgba(77, 189, 255, 0.25)
 }
 .button-sm.button-shadow:hover::before {
-	box-shadow: 0 4px 16px rgba(31, 43, 53, 0.25)
+	box-shadow: 0 4px 16px rgba(77, 181, 255, 0.4)
 }
 .button-primary {
 	color: #fff !important;
-	transition: background .15s ease
+	transition: background .5s ease !important;
 }
 .button-primary {
-	background: #ff678c;
-	background: linear-gradient(65deg, #FF4D79 0, #FF809F 100%)
+background: rgb(18,143,255);
+background: linear-gradient(65deg, rgba(18,143,255,1) 0%, rgba(18,190,255,1) 100%);
 }
 .button-primary:hover {
-	background: #ff6c90;
-	background: linear-gradient(65deg, #ff527d 0, #ff85a3 100%)
+background: rgb(18,143,255);
+background: linear-gradient(128deg, rgba(18,143,255,1) 0%, rgba(18,190,255,1) 100%);
 }
 .button-primary.button-shadow::before {
-	box-shadow: 0 8px 16px rgba(255, 77, 121, 0.25)
+	box-shadow: 0 8px 16px rgba(77, 189, 255, 0.25)
 }
 .button-primary.button-shadow:hover::before {
-	box-shadow: 0 8px 16px rgba(255, 77, 121, 0.4)
+	box-shadow: 0 8px 16px rgba(77, 181, 255, 0.4)
 }
 .button-primary .button-sm.button-shadow::before {
-	box-shadow: 0 4px 16px rgba(255, 77, 121, 0.25)
+	box-shadow: 0 4px 16px rgba(77, 189, 255, 0.25)
 }
 .button-primary .button-sm.button-shadow:hover::before {
-	box-shadow: 0 4px 16px rgba(255, 77, 121, 0.4)
+	box-shadow: 0 4px 16px rgba(77, 181, 255, 0.4)
 }
 .button-block {
 	display: flex
