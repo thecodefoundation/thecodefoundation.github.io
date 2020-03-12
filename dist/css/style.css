@@ -1469,7 +1469,6 @@ main {
 .main-nav li {
 	text-decoration: none !important;
 	text-align: center;
-	margin: 15px auto;
 }
 
 .logo {
@@ -1495,6 +1494,7 @@ main {
 	font-weight: bold;
 	color: #128fff;
 	text-decoration: none !important;
+	margin-right: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1526,7 +1526,7 @@ main {
 	}
 
 	.nav-links {
-	    margin-left: 40px;
+	    margin-right: 40px;
 	}
 
 	.logo {
